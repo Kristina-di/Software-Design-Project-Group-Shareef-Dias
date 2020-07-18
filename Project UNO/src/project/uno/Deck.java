@@ -76,7 +76,7 @@ public class Deck
      *
      * @return
      */
-    public Cards darwCard() {
+    public Cards drawCard() {
         if (isEmpty())
         {
             throw new IllegalArgumentException("Can't draw a card, the deck is empty"); 
