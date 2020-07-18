@@ -22,6 +22,8 @@ private User users[] = new User[100];//room for 100 online players!
      {
        ProjectUNO newPortal = new ProjectUNO();
        newPortal.run();
+       String[] userName = null;
+       Game game = new Game(userName);
     }
      /**
      * method that takes in the User's name and chosen password
@@ -63,19 +65,6 @@ private User users[] = new User[100];//room for 100 online players!
         }//loop only ends when password is valid so now we create the User
         
         User newUser = new User(userName, password);
-        users[userCount] = newUser;//add the new user to the user list
-        userCount++;
-        System.out.println("New User Added");
-        System.out.println("UserName: " + userName);
-      String[] Color={"Red", "Blue", "Green", "Yellow"};
-        int [] num =new int [10];
-       for (int i = 0; i < 8; i++) {
-         Random r=new Random();
-        int randomNumber=r.nextInt(Color.length);
-        int A = (int) Math.floor(Math.random() * 10);
-         System.out.println(A +" " + Color[randomNumber]);    
-       }
-   
     
 }//end class
 }
