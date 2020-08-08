@@ -5,10 +5,6 @@
  */
 package project.uno;
 
-/**
- *
- * @author share
- */
 
 public class Cards
 {
@@ -16,7 +12,7 @@ public class Cards
     static Cards[] toArray(Cards[] cards) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    enum Color
+    public enum Color
     {
         Red,Blue,Green,Yellow,Wild;
         
@@ -26,9 +22,9 @@ public class Cards
             return Color.color[i];
         }
     }
-    enum Value
+    public enum Value
     {
-        Zero,One,Two,Three,Four,Five,Six,Seve,Eight,Neine,Ten,DrawTwo,Skip,Revese,Wild,WildFour;
+        Zero,One,Two,Three,Four,Five,Six,Seve,Eight,Neine,Ten,DrawTwo,Skip,Revese,Wild,Wild_Four;
         private static final Value[] values = Value.values();
         public static Value getValue(int i)
         {

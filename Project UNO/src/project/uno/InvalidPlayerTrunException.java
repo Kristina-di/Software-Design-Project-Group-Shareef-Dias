@@ -5,11 +5,7 @@
  */
 package project.uno;
 
-/**
- *
- * @author share
- */
-class InvalidPlayerTrunException extends Exception {
+public class InvalidPlayerTrunException extends Exception {
     String playerid;
     public InvalidPlayerTrunException(String message,String pid) {
         super(message);
